@@ -23,6 +23,12 @@ Projects can now be followed while they are still active:
 
 The ChatGPT Project link is deliberately manual. The app does not read or sync your private ChatGPT conversations.
 
+## Project profile and tracking
+
+Each project can include a client contact, client company and type, project category, amount, next action and due date. Active projects expose a persistent progress control (0–100%) alongside their next reflection. These fields are intentionally optional so a quick personal project remains lightweight.
+
+Notion is connected in the assistant workspace, but the web app does not yet automatically synchronize to Notion or a calendar. That requires a server-side OAuth integration and an explicit destination database/calendar.
+
 Data is persisted in browser `localStorage` for this MVP, so it can be tried without a database or account. The UI includes loading, empty, error, and mobile states.
 
 ## Architecture
