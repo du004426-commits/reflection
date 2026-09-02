@@ -12,6 +12,17 @@ This first milestone deliberately implements one complete loop:
 4. Receive a structured, editable summary.
 5. Confirm it to save a reflection.
 
+## Continuous check-ins (current)
+
+Projects can now be followed while they are still active:
+
+- Choose a daily, weekly, or biweekly reflection cadence.
+- Save an optional ChatGPT Project link for one-click context switching.
+- Start a check-in at any time; after confirming it, the next check-in is scheduled.
+- Use an eight-question Chinese conversation that moves through facts, wins, friction, tentative causes, feelings, patterns, insight, and a small next experiment.
+
+The ChatGPT Project link is deliberately manual. The app does not read or sync your private ChatGPT conversations.
+
 Data is persisted in browser `localStorage` for this MVP, so it can be tried without a database or account. The UI includes loading, empty, error, and mobile states.
 
 ## Architecture
