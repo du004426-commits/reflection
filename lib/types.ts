@@ -1,0 +1,9 @@
+export type ProjectStatus = "active" | "completed";
+export type ReminderStatus = "pending" | "snoozed" | "dismissed";
+export type ReviewStage = "facts" | "evaluation" | "causes" | "insight" | "transfer" | "summary";
+export type Project = { id: string; name: string; startedAt: string; completedAt?: string; status: ProjectStatus };
+export type ReviewReminder = { id: string; projectId: string; dueAt: string; status: ReminderStatus };
+export type Message = { id: string; role: "assistant" | "user"; content: string; createdAt: string };
+export type ProjectSummary = { projectName: string; period: string; outcome: string; wentWell: string; friction: string; rootCauses: string; learning: string; nextTime: string; takeaway: string };
+export type Reflection = { id: string; projectId: string; createdAt: string; messages: Message[]; summary: ProjectSummary };
+export type ReviewDraft = { id: string; projectId: string; stage: ReviewStage; messages: Message[]; summary?: ProjectSummary };
